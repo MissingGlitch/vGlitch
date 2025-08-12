@@ -1,0 +1,31 @@
+{
+  "name": "vglitch",
+  "version": "1.0.0",
+  "description": "Un bot de discord para jugar partidas de rol de mesa.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node --env-file .env .",
+    "dev": "nodemon --env-file .env .",
+    "debug": "nodemon --env-file .env --inspect .",
+    "dev-upload": "node --env-file .env ./utilities/uploader.js dev",
+    "global-upload": "node --env-file .env ./utilities/uploader.js global"
+  },
+  "keywords": [
+    "dnd",
+    "trpg",
+    "dice",
+    "roleplay",
+    "discord-bot"
+  ],
+  "author": "Missing Glitch",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.15.2",
+    "mathjs": "^12.4.2",
+    "winston": "^3.13.0",
+    "winston-transport": "^4.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
